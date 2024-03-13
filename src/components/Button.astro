@@ -2,7 +2,7 @@
 const {variant, size} = Astro.props;
 ---
 
-<button class={variant}><slot /></button>
+<button class={variant + " " + size}><slot /></button>
 
 
 <style>
@@ -18,5 +18,20 @@ const {variant, size} = Astro.props;
     .secondary {
         background-color:azure;
         color: #0088ff;
+    }
+
+    .tertiary {
+        background-color:darkgray;
+        color: lightgray;  
+    }
+    .small {
+        font-size: 1rem;
+    }
+
+    .medium {
+        font-size: 2rem;
+    }
+    .large {
+        font-size: 3rem;
     }
 </style>
