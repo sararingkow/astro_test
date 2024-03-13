@@ -1,0 +1,22 @@
+---
+const {variant, size} = Astro.props;
+---
+
+<button class={variant}><slot /></button>
+
+
+<style>
+    button {
+        padding: 1rem;
+    }
+
+    .primary {
+        background-color: antiquewhite;
+        color: black;
+    }
+
+    .secondary {
+        background-color:azure;
+        color: #0088ff;
+    }
+</style>
