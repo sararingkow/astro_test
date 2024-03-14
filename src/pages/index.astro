@@ -1,26 +1,36 @@
 ---
-import Card from '../components/Card.astro';
-import Navigation from '../components/Navigation.astro';
-import Button from '../components/Button.astro';
-import '../styles/style.css';
+import Card from "../components/Card.astro";
+import Navigation from "../components/Navigation.astro";
+import Button from "../components/Button.astro";
+import "../styles/style.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
 
-		<title>Astro</title>
-	</head>
-	<body>
-		<Navigation />
-		<h1>Astro</h1>
-		<main>
-			<Button variant="primary" size="small">Say hi!</Button>
-			<Button variant="secondary" size="medium">Say hi!</Button>
-			<Button variant="tertiary" size="large">Say hi!</Button>
-		</main>
-	</body>
+    <title>Astro</title>
+  </head>
+  <body>
+    <Navigation />
+    <h1>Astro</h1>
+    <main>
+      <Button variant="primary" size="small">Say hi!</Button>
+      <Button variant="secondary" size="medium">Say hi!</Button>
+      <Button variant="tertiary" size="large">Say hi!</Button>
+
+      <Card header="S'up y'all!">
+        <img src="public/mini_mushroom.webp" alt="dummy-image" />
+        <button>Say hi!</button>
+      </Card>
+
+      <Card header="S'up y'all!">
+        <img src="public/planter_sanke.webp" alt="dummy-image" />
+        <button>Say hi!</button>
+      </Card>
+    </main>
+  </body>
 </html>
